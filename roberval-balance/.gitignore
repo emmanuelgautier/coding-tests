@@ -1,0 +1,15 @@
+### Node template
+# Logs
+logs
+*.log
+yarn-error.log*
+yarn-debug.log*
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+node_modules

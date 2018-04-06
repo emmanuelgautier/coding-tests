@@ -1,0 +1,31 @@
+.app {
+  text-align: center;
+
+  &__numberCircle {
+    display: inline-block;
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    border: 2px solid #666;
+
+    &:hover {
+      cursor: pointer;
+      background: #666;
+      color: #fff;
+    }
+
+    &--active {
+      background: #ffff00;
+
+      &:hover {
+        background: #adff2f;
+      }
+    }
+  }
+
+  &__image {
+    padding: 2em;
+  }
+}

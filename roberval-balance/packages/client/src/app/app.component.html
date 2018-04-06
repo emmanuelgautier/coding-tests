@@ -1,0 +1,14 @@
+<div class="app">
+    <h1>{{title}}</h1>
+
+    <div *ngFor="let weight of balls; let i = index" (click)="makeThisBallTheHeaviest(i)" class="app__numberCircle" [ngClass]="{'app__numberCircle--active': weight > 0}">{{i}}</div>
+
+    <div class="app__image">
+        <img width="300" src="/assets/balance.png">
+    </div>
+
+    <button (click)="reset()">Reset</button>
+    <button (click)="submit()">Execute</button>
+
+    <span *ngIf="apiResponse">The ball {{apiResponse.result}} is the heaviest ! Number of iterations: {{apiResponse.iterations}}</span>
+</div>
